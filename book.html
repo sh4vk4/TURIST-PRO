@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ТУРИСТ-PRO - БРОНИРОВАНИЕ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="assets/style/style.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <header>
+        <nav class="nav container">
+          <a href="index.html" class="nav__logo">
+            <i class="bx bxs-map-alt"></i> ТУРИСТ-PRO
+          </a>
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html#book" class="nav__link"
+                  >управление бронированием</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="index.html#stock" class="nav__link">акции</a>
+              </li>
+              |
+              <li class="nav__item">
+                <a href="result.html" class="nav__link">поиск</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="section form">
+        <div class="form__title">
+        <h1 class="form__title-text">
+          данные о заказе
+        </h1>
+        <p class="form__title-logo">
+          <i class='bx bx-cart-alt' ></i>
+        </p>
+      </div>
+        <div class="form__container container grid">
+          <form class="form__form" action="POST">
+            <div class="form__form-main">
+              <div class="form__form-item bar1">
+                <label for="region">РЕГИОН</label>
+                <div class="form__form-item-field">
+                <input type="search" name="region" autocomplete="off"/>
+              </div>
+              </div>
+              <div class="form__form-item bar1">
+                <label for="route">НАЗВАНИЕ МАРШРУТА</label>
+                <div class="form__form-item-field">
+                <input type="search" name="route" autocomplete="off"/>
+              </div>
+              </div>
+              <div class="form__form-item bar1">
+                <label for="zone">ЗОНА ДЛЯ ПОСЕЩЕНИЯ</label>
+                <div class="form__form-item-field">
+                <input type="search" name="zone" autocomplete="off"/>
+              </div>
+              </div>
+              <div class="form__form-item bar3">
+                <label for="date">ДАТА ПОХОДА</label>
+                <div class="form__form-item-field">
+                <input type="date" name="date" autocomplete="off"/>
+              </div>
+              </div>
+              <div class="form__form-item bar4">
+                <label for="num">КОЛИЧЕСТВО УЧАСТНИКОВ</label>
+                <div class="form__form-item-field">
+                <input type="number" name="num" autocomplete="off"/>
+              </div>
+              </div>
+              <div class="form__cost bar1">
+                <p class="form__cost-title">ЦЕНА</p>
+                <div class="form__form-item-field">
+                <p>-</p>
+              </div>
+              </div>
+              <hr class="bar1">
+              <div class="form__form-check bar1">
+              <input type="checkbox" name="guide" />Услуги проводника
+            </div>
+            <div class="form__form-check bar1">
+              <input type="checkbox" name="equip"/>Услуги аренды
+              туристического оборудования
+            </div>
+            <div class="form__form-check bar1">
+              <input type="checkbox" name="photo"/>Услуги
+              фотографа/видеооператора
+            </div>
+            <div class="form__form-check bar1">
+              <input type="checkbox" name="insurance"/>Страхование от
+              несчастных случаев
+            </div>
+            </div>
+            <div class="form__form-add">
+              <div class="form__form-item">
+                <label for="comm">ПОЖЕЛАНИЯ</label>
+                <div class="form__form-item-field">
+              <input type="text" name="comm" id="" size="1000" autocomplete="off"/>
+            </div>
+            </div>
+            <div class="form__form-item">
+              <label for="email">E-MAIL</label>
+              <div class="form__form-item-field">
+              <input type="email" name="email" id="" autocomplete="off"/>
+            </div>
+            </div>
+              <div class="form__cost">
+                <p p class="form__cost-title">ИТОГОВАЯ СТОИМОСТЬ</p>
+                <div class="form__form-item-field">
+                <p>-</p>
+              </div>
+              </div>
+              <div class="form__button">
+              <button class="form__button-button">ОФОРМИТЬ<i class="bx bx-chevron-right"></i></button>
+            </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container container grid">
+          <div class="footer__logo">
+            <a href="index.html" class="nav__logo" id="footer__logo">
+              <i class="bx bxs-map-alt"></i> ТУРИСТ-PRO
+            </a>
+            <p class="footer__number">8 (800) 555-33-10</p>
+          </div>
+          <div class="footer__links">
+            <h3 class="footer__title">компания</h3>
+            <ul>
+              <li class="footer__list">
+                <a href="">О нас</a>
+              </li>
+              <li class="footer__list">
+                <a href="">Обратная связь</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h3 class="footer__title">полезное</h3>
+            <ul>
+              <li class="footer__list">
+                <a href="">Возврат</a>
+              </li>
+              <li class="footer__list">
+                <a href="">Акции</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__credit">© 2021 ТУРИСТ-PRO</div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
